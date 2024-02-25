@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victoria Sandwich Cake 🍰</title>
+    <style>
+      h1 {
+        font-family: cursive;
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        border: 2px solid #e2daff;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: #e2daff;
+      }
+
+      h3 {
+        font-weight: 100;
+        font-family: cursive;
+        background: linear-gradient(#fdfcff, #efebff);
+        border: 2px solid #e2daff;
+        border-radius: 4px;
+        padding: 15px;
+        text-align: center;
+      }
+      .mainImage {
+        border-radius: 4px;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .view-recipe {
+        text-decoration: none;
+        text-align: left;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 4px;
+        background-color: #efebff;
+        padding: 15px;
+        box-shadow: rgb(226, 218, 255) 1px 1px 4px 6px;
+      }
+
+      button {
+        display: block;
+        margin: auto;
+        border-radius: 25px;
+        background-color: #fff;
+        border: 1px solid #e2daff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 15px;
+        text-decoration: none;
+        box-shadow: rgba(37, 39, 89, 0.5) 0px 8px 8px 0;
+        transition: all 200ms ease;
+        cursor: pointer;
+      }
+
+      button:hover {
+        color: #fff;
+        background: #b6a2fb;
+        text-decoration: none;
+      }
+
+      .details {
+        color: #b6a2fb;
+        font-weight: bold;
+      }
+
+      .footer {
+        text-align: center;
+        padding-top: 25px;
+        font-size: 10px;
+      }
+
+      .mainParagraph {
+        line-height: 150%;
+      }
+
+      .secondaryImgs {
+        width: 295px;
+        style: float: left;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bake With Marie</h1>
+      <h2>Classic Victoria Sandwich Cake Recipe</h2>
+      <hr />
+      <img
+        class="mainImage"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/257/original/IMG_8097.jpg?1707843376"
+        alt="Victoria sandiwch cake on a China cake stand sitting on a windowsill surrounded with flowers"
+        width="600px"
+      />
+      <hr />
+      <h3>Why is it called Victoria?</h3>
+      <p class="mainParagraph">
+        The classic Victoria Sandwich cake was named after
+        <strong>Queen Victoria</strong>. She was a fervant fan of afternoon teas
+        and regularly ate a slice of cake with her tea. Buckingham Palace Pastry
+        Chef's always make Victoria sandwich cakes at Royal Garden Parties. You
+        may have also seen the cake in a few period dramas including
+        <em>Downton Abbey</em> or <em>Bridgerton</em>! It is delicious and the
+        recipe is very accessible to bakers, amateurs or pros!
+      </p>
+      <p>
+        <a
+          class="view-recipe"
+          href="https://whatcorinnedid.com/classic-victoria-sandwich-cake-recipe"
+          target="_blank"
+          >Read full recipe</a
+        >
+      </p>
+      <div>
+        <img
+          class="secondaryImgs"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/273/original/IMG_8069.jpg?1707853919"
+          style="margin-right: 5px"
+        />
+        <img
+          class="secondaryImgs"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/274/original/IMG_8102.jpg?1707853933"
+        />
+      </div>
+      <br />
+      <button>More recipes</button>
+      <div class="footer">
+        This page was built by <span class="details">Marie Aldebert</span><br />
+        Instagram:
+        <span class="details">@whatcorinnedid</span>
+      </div>
+    </div>
+    <script>
+      function letsBake() {
+        let favCake = prompt("What's your favorite cake?");
+        alert("Delicious! 😋");
+
+        let GBBO = prompt("Is the Great British Bake Off the best show ever?");
+        GBBO = GBBO.toLowerCase().trim();
+
+        if (GBBO === "true" || GBBO === "yes") {
+          alert("Great tastes! 😍");
+        } else {
+          alert("Humm, okay 😒");
+        }
+      }
+
+      let moreRecipes = document.querySelector("button");
+      moreRecipes.addEventListener("click", letsBake);
+    </script>
+  </body>
+</html>
